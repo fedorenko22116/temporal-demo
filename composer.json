@@ -1,0 +1,20 @@
+{
+    "name": "katarsys/temporal",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Fedorenko",
+            "email": "vi.fedorenko@foodtech.team"
+        }
+    ],
+    "require": {
+        "temporal/sdk": "^2.16"
+    },
+    "require-dev": {
+        "internal/dload": "^1.8"
+    }
+}
