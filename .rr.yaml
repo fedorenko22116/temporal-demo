@@ -4,10 +4,10 @@ rpc:
     listen: tcp://127.0.0.1:6001
 
 server:
-    command: "php worker.php"
+    command: "php bin/worker.php"
 
 temporal:
-    address: "127.0.0.1:7233"
+    address: '${TEMPORAL_ADDRESS}'
 
 logs:
     level: info
