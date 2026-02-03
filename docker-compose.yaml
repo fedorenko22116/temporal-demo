@@ -86,6 +86,8 @@ services:
     container_name: temporal-worker
     depends_on:
       - temporal
+    volumes:
+      - .:/var/www/project
     image: temporal-worker
     environment:
       TEMPORAL_ADDRESS: temporal:7233
@@ -96,6 +98,8 @@ services:
     container_name: temporal-client
     depends_on:
       - temporal
+    volumes:
+      - .:/var/www/project
     image: temporal-client
     environment:
       TEMPORAL_ADDRESS: temporal:7233
